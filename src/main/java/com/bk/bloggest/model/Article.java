@@ -1,13 +1,11 @@
-package com.bk.bloggest.domain;
+package com.bk.bloggest.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
-import org.springframework.security.core.userdetails.User;
+
 
 import java.util.Date;
 
@@ -26,5 +24,5 @@ public class Article {
     private User author;
 
     @Field(type = FieldType.Date)
-    private Date createdBy = new Date() ;
+    private Date createdDate = new Date();
 }

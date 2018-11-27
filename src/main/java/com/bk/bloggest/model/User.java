@@ -1,4 +1,4 @@
-package com.bk.bloggest.domain;
+package com.bk.bloggest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
